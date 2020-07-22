@@ -1,4 +1,5 @@
 {
+  "homepage": "https://muhammedalici.github.io/React-Ecommerce/",
   "name": "ecommerce-react",
   "version": "1.2.0",
   "main": "index.js",
@@ -11,6 +12,8 @@
   ],
   "license": "MIT",
   "scripts": {
+  
+    "deploy": "gh-pages -d dist",
     "serve": "live-server dist/",
     "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js",
     "dev-server": "webpack-dev-server --open --config webpack/dev.config.js",
