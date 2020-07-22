@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.b7a90726bf71c9c4b9691735e696363b.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
+importScripts("/precache-manifest.060b23f86bf56b439c67eb1eb5df8289.js", "https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 let currentCacheNames = Object.assign({ precacheTemp: workbox.core.cacheNames.precache + "-temp" }, workbox.core.cacheNames);
 
