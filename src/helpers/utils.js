@@ -2,8 +2,8 @@ export const displayDate = (timestamp) => {
   const date = new Date(timestamp);
 
   const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June', 'July',
-     'August', 'September', 'October', 'November', 'December'
+    'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz',
+     'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'
   ];
 
   const day = date.getDate();
@@ -15,9 +15,9 @@ export const displayDate = (timestamp) => {
 }
 
 export const displayMoney = (n) => {
-  const format = new Intl.NumberFormat('en-US', {
+  const format = new Intl.NumberFormat('tr-TR', {
     style: 'currency',
-    currency: 'USD'
+    currency: 'TRY'
   });
 
   // or use toLocaleString()

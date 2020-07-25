@@ -17,7 +17,7 @@ class Boundary extends Component {
     if (this.state.hasError) {
       return (
         <div className="loader">
-          <h3>:( Something went wrong.</h3>
+          <h3>:( Bir şeyler yanlış gitti.</h3>
         </div>
       );
     }

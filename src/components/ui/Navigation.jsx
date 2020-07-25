@@ -91,7 +91,7 @@ const Navigation = ({ isAuth, path, history }) => {
               history={history}
           >
             <button className="button-muted button-small">
-              More Filters &nbsp;<i className="fa fa-chevron-right" />
+              Filtrele &nbsp;<i className="fa fa-chevron-right" />
             </button>
           </FiltersToggle>
         </>
@@ -127,7 +127,7 @@ const Navigation = ({ isAuth, path, history }) => {
                   onClick={onClickLink}
                   to={ROUTE.SIGNUP} 
               >
-                Sign Up
+                Kaydol
               </NavLink>
             )}
             {(path === ROUTE.SIGNUP || path === ROUTE.FORGOT_PASSWORD || path === ROUTE.HOME) && (
@@ -138,7 +138,7 @@ const Navigation = ({ isAuth, path, history }) => {
                     onClick={onClickLink}
                     to={ROUTE.SIGNIN} 
                 >
-                  Sign In
+                  Giriş
                 </NavLink>
             )}
           </li>
