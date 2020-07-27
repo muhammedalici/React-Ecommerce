@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import Basket from 'components/basket/Basket';
 import Navigation from 'components/ui/Navigation';
+import Categorization from 'components/ui/Categorization'
 import Footer from 'components/ui/Footer';
 
 import { SIGNIN, ADMIN_DASHBOARD } from 'constants/routes';
@@ -16,6 +17,7 @@ const PrivateRoute = ({ isAuth, userType, component: Component, path, ...rest })
         ? (
           <>
             <Navigation path={path} isAuth={isAuth} />
+            <Categorization path={path} isAuth={isAuth}/>
             <Basket isAuth={isAuth} />
             <main className="content">
               <Component {...props} />

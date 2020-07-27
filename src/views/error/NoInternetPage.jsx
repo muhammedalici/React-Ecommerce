@@ -3,14 +3,14 @@ import React from 'react';
 const NoInternet = ({ history }) => {
   return (
     <div className="page-not-found">
-      <h1>:( No Internet Connection.</h1>
-      <p>Please check you network connectivity and try again.</p>
+      <h1>:( İnternet Bağlantınız Bulunmamaktadır.</h1>
+      <p>Lütfen İnternet Bağlantınızı Kontrol Edip Tekrar Deneyiniz.</p>
       <br/>
       <button
           className="button"
           onClick={() => window.location.reload(true)}
       >
-        Try Again
+        Tekrar Dene
       </button>
     </div>
     

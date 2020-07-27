@@ -31,7 +31,7 @@ const UserNav = ({ profile, isAuthenticating }) => {
   
   return isAuthenticating ? (
     <div className="user-nav">
-      <span>Signing Out</span>
+      <span>Çıkış Yapılıyor</span>
       <CircularProgress />
     </div>
   ) : (
@@ -55,7 +55,7 @@ const UserNav = ({ profile, isAuthenticating }) => {
               to={ACCOUNT}
               className="user-nav-sub-link"
           >
-            View Account
+            Hesabı Görüntüle
             <i className="fa fa-user" />
           </Link>
         )}
@@ -65,7 +65,7 @@ const UserNav = ({ profile, isAuthenticating }) => {
                 className="user-nav-sub-link margin-0 d-flex"
                 onClick={onSignOut}
             >
-              Sign Out
+              Çıkış Yap
               <i className="fa fa-sign-out-alt" />
             </h6>
           )}

@@ -58,7 +58,7 @@ const Home = (props) => {
               {isFiltered && (
                 <h5>
                   {store.filteredProducts.length > 0 
-                    && `Found ${store.filteredProducts.length} ${store.filteredProducts.length > 1 ? 'products' : 'product'}`
+                    && ` ${store.filteredProducts.length} ${store.filteredProducts.length > 1 ? 'Ürün Bulundu' : 'Ürün Bulundu'}`
                   }
                 </h5>
               )}

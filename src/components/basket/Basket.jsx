@@ -96,7 +96,7 @@ const Basket = (props) => {
           </div>
           {basket.length <= 0 && (
             <div className="basket-empty">
-              <h5 className="basket-empty-msg">Your basket is empty</h5>
+              <h5 className="basket-empty-msg">Sepetiniz Boş</h5>
             </div> 
           )}
           {basket.map(product => (

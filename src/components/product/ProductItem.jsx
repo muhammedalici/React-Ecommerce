@@ -23,10 +23,10 @@ const ProductItem = ({
   const onAddToBasket = () => {
     if (foundOnBasket(product.id)) {
       dispatch(removeFromBasket(product.id));
-      displayActionMessage('Item removed from basket', 'info');
+      displayActionMessage('Ürün sepetten silindi', 'info');
     } else {
       dispatch(addToBasket(product));
-      displayActionMessage('Item added to basket', 'success');
+      displayActionMessage('Ürün sepete eklendi', 'success');
     }
   };
 
@@ -63,7 +63,7 @@ const ProductItem = ({
               className={`product-card-button button-small button button-block ${foundOnBasket(product.id) ? 'button-border button-border-gray' : ''}`} 
               onClick={onAddToBasket}
           >
-            {foundOnBasket(product.id) ? 'Remove from basket' : 'Add to basket'}
+            {foundOnBasket(product.id) ? 'Sepetten Sil' : 'Sepete Ekle'}
           </button>
         )}
         

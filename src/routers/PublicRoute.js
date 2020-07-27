@@ -6,6 +6,7 @@ import { SIGNIN, SIGNUP, HOME, ADMIN_DASHBOARD } from 'constants/routes';
 
 import Basket from 'components/basket/Basket';
 import Navigation from 'components/ui/Navigation';
+import Categorization from 'components/ui/Categorization'
 import Footer from 'components/ui/Footer';
 
 const PublicRoute = ({ userType, isAuth, component: Component, path, ...rest }) => (
@@ -26,6 +27,7 @@ const PublicRoute = ({ userType, isAuth, component: Component, path, ...rest }) 
           : (
             <>
               <Navigation path={path} isAuth={isAuth}/>
+              <Categorization path={path} isAuth={isAuth}/>
               <Basket isAuth={isAuth}/>
               <main className="content">
                 <Component {...props} />

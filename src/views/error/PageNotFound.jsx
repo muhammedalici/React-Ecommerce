@@ -3,13 +3,13 @@ import React from 'react';
 const PageNotFound = ({ history }) => {
   return (
     <div className="page-not-found">
-      <h1>:( Page you are looking for doesn't exists.</h1>
+      <h1>:( Görünüşe Göre Sayfa Bulunamadı :/</h1>
       <br/>
       <button
           className="button"
           onClick={history.goBack}
       >
-        Go back
+        Geri Dön
       </button>
     </div>
   );

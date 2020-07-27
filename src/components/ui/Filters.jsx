@@ -73,11 +73,11 @@ const Filters = (props) => {
   return (
     <div className="filters">
       <div className="filters-field">
-        <span>Brand</span>
+        <span>Kategoriler</span>
         <br/>
         <br/>
         {props.productsLength === 0 && props.isLoading ? (
-          <h5 className="text-subtle">Loading Filter</h5>
+          <h5 className="text-subtle">Yükleniyor</h5>
         ) : (
           <select 
               className="filters-brand"
@@ -85,16 +85,17 @@ const Filters = (props) => {
               disabled={props.isLoading || props.productsLength === 0}
               onChange={onBrandFilterChange}
           >
-            <option value="">All Brands</option>
-            <option value="salt">Salt Maalat</option>
-            <option value="betsin">Betsin Maalat</option>
-            <option value="black">Black Kibal</option>
-            <option value="sexbomb">Sexbomb</option>
+            <option value="">Tüm Kategoriler</option>
+            <option value="meyve & sebze">Meyve & Sebze</option>
+            <option value="süt ve süt ürünleri">Süt ve Süt Ürünleri</option>
+            <option value="kahvaltılık ürünler">Kahvaltılık Ürünler</option>
+            <option value="et & balık">Et & Balık</option>
+            <option value="temel gıda">Temel Gıda</option>
           </select>
         )}
       </div>
       <div className="filters-field">
-        <span>Sort By</span>
+        <span>Sırala</span>
         <br/>
         <br/>
         <select 
@@ -103,19 +104,19 @@ const Filters = (props) => {
               disabled={props.isLoading || props.productsLength === 0}
               onChange={onSortFilterChange}
           >
-            <option value="">None</option>
-            <option value="name-asc">Name Ascending A - Z</option>
-            <option value="name-desc">Name Descending Z - A</option>
-            <option value="price-desc">Price High - Low</option>
-            <option value="price-asc">Price Low - High</option>
+            <option value="">Sıralama Yok</option>
+            <option value="name-asc">İsime Göre A - Z</option>
+            <option value="name-desc">İsime Göre Z - A</option>
+            <option value="price-desc">Azalan Fiyat</option>
+            <option value="price-asc">Artan Fiyat</option>
           </select>
       </div>
       <div className="filters-field">
-        <span>Price Range</span>
+        <span>Fiyat Aralığı</span>
         <br/>
         <br/>
         {props.productsLength === 0 && props.isLoading ? (
-          <h5 className="text-subtle">Loading Filter</h5>
+          <h5 className="text-subtle">Yükleniyor</h5>
         ) : (
           <PriceRange 
               min={min} 
@@ -134,14 +135,14 @@ const Filters = (props) => {
             disabled={props.isLoading || props.productsLength === 0}
             onClick={onApplyFilter}
         >
-          Apply filters
+          Filtrele
         </button>
         <button
             className="filters-button button button-border button-small"
             disabled={props.isLoading || props.productsLength === 0}
             onClick={onResetFilter}
         >
-          Reset filters
+          Filtreyi Sıfırla
         </button>
       </div>
     </div>

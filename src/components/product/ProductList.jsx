@@ -39,14 +39,14 @@ const ProductList = ({
 
   return filteredProductsLength === 0 && !isLoading && !requestStatus ? (
     <MessageDisplay 
-        message="The are no items found."
-        desc="Try using correct filters or keyword."
+        message = "Böyle bir ürün bulunamadı."
+        desc="Farklı anahtar kelime veya filtre kullanmayı deneyiniz."
     />
   ) : requestStatus ? (
     <MessageDisplay 
         message={requestStatus}
         action={fetchProducts}
-        buttonLabel="Try Again"
+        buttonLabel="Tekrar dene"
     />
   ) : (
     <>
@@ -58,7 +58,7 @@ const ProductList = ({
             disabled={isFetching}
             onClick={fetchProducts}
         >
-          {isFetching ? 'Fetching Items...' : 'Fetch More Items'}
+          {isFetching ? 'Ürünler Getiriliyor...' : 'Daha Fazla Göster'}
         </button>
       </div>
     )}

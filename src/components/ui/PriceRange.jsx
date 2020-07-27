@@ -93,7 +93,7 @@ const PriceRange = (props) => {
             min={props.min}
             onChange={onRangeChange}
             ref={rangeMin}
-            step="50" 
+            step="1" 
             type="range" 
             value={minState} 
         />
@@ -104,7 +104,7 @@ const PriceRange = (props) => {
             min={props.min}
             onChange={onRangeChange}
             ref={rangeMax} 
-            step="20"
+            step="1"
             type="range"
             value={maxState} 
         />

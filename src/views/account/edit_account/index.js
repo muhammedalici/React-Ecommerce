@@ -136,7 +136,7 @@ const EditProfile = (props) => {
   return (
     <Boundary>
       <div className="edit-user">
-        <h3 className="text-center">Edit Account Details</h3>
+        <h3 className="text-center">Hesap Ayrıntılarını Düzenle</h3>
         <div className="user-profile-banner">
           <div className="user-profile-banner-wrapper">
             <ImageLoader  
@@ -250,7 +250,7 @@ const EditProfile = (props) => {
                 disabled={isLoading}
                 onClick={() => props.history.push(ACCOUNT)}
             >
-              Back to Profile
+              Profilime Dön
             </button>
             <button
                 className="button w-100-mobile"

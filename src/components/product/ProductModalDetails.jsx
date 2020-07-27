@@ -8,10 +8,10 @@ const ProductModalDetails = ({ product, dispatch, foundOnBasket }) => {
   const onAddToBasket = () => {
     if (foundOnBasket(product.id)) {
       dispatch(removeFromBasket(product.id));
-      displayActionMessage('Item removed from basket', 'info');
+      displayActionMessage('Ürün sepetten silindi', 'info');
     } else {
       dispatch(addToBasket(product));
-      displayActionMessage('Item added to basket', 'success');
+      displayActionMessage('Ürün sepete eklendi', 'success');
     }
   };
 
@@ -26,7 +26,7 @@ const ProductModalDetails = ({ product, dispatch, foundOnBasket }) => {
       </div>
       <div className="product-modal-details">
         <h3>{product.name}</h3>
-        <span className="text-subtle">Brand: &nbsp;</span> 
+        <span className="text-subtle">Kategori: &nbsp;</span> 
         <span><strong>{product.brand}</strong></span>
         <br/>
         <br/>
@@ -38,7 +38,7 @@ const ProductModalDetails = ({ product, dispatch, foundOnBasket }) => {
               className={`button button-small ${foundOnBasket(product.id) ? 'button-border button-border-gray' : ''}`} 
               onClick={onAddToBasket}
           >
-            {foundOnBasket(product.id) ? 'Remove From Basket' : 'Add To Basket'}
+            {foundOnBasket(product.id) ? 'Sepetten Sil' : 'Sepete Ekle'}
           </button>
         </div>
       </div>
